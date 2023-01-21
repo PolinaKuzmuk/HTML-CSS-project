@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-700.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-700italic.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-italic.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-v25-latin_cyrillic-regular.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About us</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__top-line">
+            <ul class="lang">
+                <li><a href="#">pl</a></li>
+                <li><a href="#">ua</a></li>
+                <li><a class="active" href="#">en</a></li>
+            </ul>
+            <div class="address">Kyiv, Mechnikova str., 14/1</div>
+            <a class="phone" href="tel:+38800211927">0800 211 927</a>
+            <a class="fb" href="#" aria-label="link to Facebook">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                        fill="#B3B3BA" />
+                </svg>
+            </a>
+        </div>
+        <div class="header__logo-box">
+            <a class="logo" href="index.html">
+                <img class="img-responsive" src="img/logo.svg" alt="">
+            </a>
+            <div class="breadcrumbs">about us</div>
+        </div>
+        <nav class="menu">
+            <button class="menu-btn" type="button" aria-label="open / close menu"></button>
+            <ul class="menu__list">
+                <li class="menu__wrap"><a class="menu__item active" href="#">about us</a></li>
+                <li class="menu__wrap"><a class="menu__item" href="#">services</a></li>
+                <li class="menu__wrap"><a class="menu__item" href="#">team</a></li>
+                <li class="menu__wrap"><a class="menu__item" href="#">publications</a></li>
+                <li class="menu__wrap"><a class="menu__item" href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="description container">
+            <div class="wrap">
+                <h1 class="description__title">We turn over the idea of legal services</h1>
+                <p class="description__text">Consolidating many years of experience and practice, the company's lawyers
+                    accompany complex projects and achieve the adoption of a number of decisions that are important for
+                    the
+                    industry. Many people form the practice of applying the law of the sea in Ukraine.</p>
+                <p class="description__text">HLEGAL is a reliable business partner, confirmed by stable cooperation with
+                    international law firms, the trust of large Ukrainian and international companies, and the
+                    recognition
+                    of professional ratings.</p>
+            </div>
+            <div class="numbers">
+                <div class="numbers__wrap">
+                    <p class="numbers__item numbers__item--1">10+</p>
+                    <p class="numbers__text">years of relevant experience</p>
+                </div>
+                <div class="numbers__wrap">
+                    <p class="numbers__item numbers__item--2">30+</p>
+                    <p class="numbers__text">active clients who entrust us with their orders on a monthly basis</p>
+                </div>
+                <div class="numbers__wrap">
+                    <p class="numbers__item numbers__item--3">500+</p>
+                    <p class="numbers__text">hours of pro bono work annually</p>
+                </div>
+            </div>
+        </section>
+        <div class="picture">
+            <picture>
+                <source media="(min-width: 992px)" srcset="img/team-desc.jpg 1x, img/team-desc@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/team-sd.jpg 1x, img/team-sd@2x.jpg 2x">
+                <img class="img-responsive" src="img/team-mob.jpg" srcset="img/team-mob@2x.jpg" alt="our team">
+            </picture>
+            <p class="picture__text">team</p>
+        </div>
+        <section class="quality container">
+            <h2 class="quality__title">Quality is what we care about the most.</h2>
+            <div class="wrap">
+                <p class="quality__text">The historically unchanged legal profession has begun to reformat in recent
+                    years. Clients are feeling this, but law firms are still resisting evolution. Clients need
+                    convenience, simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the
+                    technological revolution in legal services has begun and is imminent.</p>
+                <p class="quality__text">Quality is what we care about the most.</p>
+                <p class="quality__text">It's simple. If you are unhappy with our work, we will refund your money. We
+                    trust our clients. And we want our clients to trust us too.</p>
+            </div>
+        </section>
+        <section class="slideshow">
+            <h3 class="slideshow__title">achievements</h3>
+            <div class="slideshow__container">
+                <div class="slideshow__item active fade">
+                    <img class="img-responsive" src="img/achievment-1.jpg" width="80" height="60" alt="Legal 500">
+                </div>
+                <div class="slideshow__item fade">
+                    <img class="img-responsive" src="img/achievment-2.jpg" width="159" height="60" alt="Legal awards 2017">
+                </div>
+                <div class="slideshow__item fade">
+                    <img class="img-responsive" src="img/achievment-3.jpg" width="195" height="60" alt="Leader of the market">
+                </div>
+                <div class="slideshow__item fade">
+                    <img class="img-responsive" src="img/achievment-4.jpg" width="166" height="60" alt="Ukrainian Law Firms">
+                </div>
+                <div class="slideshow__item fade">
+                    <img class="img-responsive" src="img/achievment-3.jpg" width="166" height="60" alt="Ukrainian Law Firms">
+                </div>
+                <div class="slideshow__item fade">
+                    <img class="img-responsive" src="img/achievment-4.jpg" width="166" height="60" alt="Ukrainian Law Firms">
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dots__item active" aria-label="slideshow item"></span>
+                <span class="dots__item" aria-label="slideshow item"></span>
+                <span class="dots__item" aria-label="slideshow item"></span>
+                <span class="dots__item dots__item--4" aria-label="slideshow item"></span>
+                <span class="dots__item dots__item--5" aria-label="slideshow item"></span>
+                <span class="dots__item dots__item--6" aria-label="slideshow item"></span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrap footer__wrap--left">
+            <div class="footer__item">
+                <p class="footer__address">Kyiv, Mechnikova str., 14/1</p>
+                <a class="footer__map-link" href="#">On map</a>
+            </div>
+            <div class="footer__item grid-2"  aria-label="link to Facebook">
+                <svg class="footer__fb" width="39" height="39" viewBox="0 0 39 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_32137_245)">
+                        <path
+                            d="M38.5 19.1786C38.5 8.62107 29.9934 0.0625 19.5 0.0625C9.00658 0.0625 0.5 8.62107 0.5 19.1786C0.5 28.72 7.44803 36.6284 16.5312 38.0625V24.7044H11.707V19.1786H16.5312V14.9671C16.5312 10.1761 19.3678 7.52973 23.7078 7.52973C25.7866 7.52973 27.9609 7.90309 27.9609 7.90309V12.6075H25.5651C23.2048 12.6075 22.4688 14.081 22.4688 15.5927V19.1786H27.7383L26.8959 24.7044H22.4688V38.0625C31.552 36.6284 38.5 28.72 38.5 19.1786Z"
+                            fill="#24A3FF" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_32137_245">
+                            <rect width="38" height="38" fill="white" transform="translate(0.5 0.0625)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <a class="footer__phone" href="tel:+3800211927">0800 211 927</a>
+                <a class="footer__mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+            </div>
+            <div class="footer__item grid-3">
+                <p class="footer__copyright">© 2021 HLEGAL Law company, LLC</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.tab-content {
+    display: none;
+    border-top: 4px solid rgba(255, 255, 255, 0.3);
+
+    &.active {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .tab-content {
+        grid-area: content;
+        border-top: none;
+    }
+}

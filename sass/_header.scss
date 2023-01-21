@@ -1,0 +1,124 @@
+.header {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: min-content min-content;
+    padding: 0 15px;
+
+    &__top-line {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 -15px;
+        padding: 10px 15px;
+        background-color: $grey-bg;
+    }
+
+    &__top-line--dark {
+        background-color: rgba(245, 245, 250, 0.2);
+    }
+
+    &__logo-box {
+        display: flex;
+    }
+
+    &--dark {
+        background-color: $main;
+        background-image: url('../img/symbol.svg');
+        background-size: calc(100vw + 150px) auto;
+        background-repeat: no-repeat;
+        background-position: top center;
+        min-height: 600px;
+        height: calc(1.333 * 100vw);
+        padding-bottom: 25px;
+        grid-template-rows: min-content min-content 1fr;
+        position: relative;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        grid-template-rows: repeat(3, min-content);
+        grid-template-columns: 1fr;
+        padding: 50px 60px 30px;
+        gap: 28px;
+
+        &__top-line {
+            padding: 0 15px;
+            align-items: flex-start;
+            background-color: transparent;
+            padding-bottom: 0;
+        }
+
+        &__top-line--dark {
+            background-color: transparent;
+            grid-column: span 2;
+        }
+
+        &__top-line {
+            justify-content: flex-start;
+        }
+
+        &--dark {
+            background-size: calc(100vw + 130px) auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: min-content min-content 1fr min-content;
+            padding-bottom: 25px;
+
+            & .header__logo-box {
+                grid-column: span 2;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        grid-template-columns: 1fr auto;
+        grid-template-rows: min-content min-content;
+        padding: 50px 60px 30px;
+        gap: 15px;
+
+        &__logo-box {
+            grid-row: 1 / -1;
+            grid-column: 1 / 2;
+        }
+
+        &__top-line {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        &--dark {
+            height: 768px;
+            background-size: auto 768px;
+            padding-bottom: 10px;
+            grid-template-areas:
+                'logo address'
+                'logo menu'
+                'text text'
+                'scroll scroll';
+            grid-template-rows: min-content min-content 1fr min-content;
+
+            & .header {
+                &__logo-box {
+                    grid-area: logo;
+                }
+
+                &__top-line {
+                    grid-area: address;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        &--dark {
+            background-size: 697px 799px;
+            height: 799px;
+        }
+    }
+}

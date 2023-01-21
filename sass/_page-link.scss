@@ -1,0 +1,18 @@
+.page-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active-regular;
+    position: relative;
+
+    &:hover {
+        color: $accent;
+
+        path {
+            stroke: $accent;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+.publications {
+    background-color: $grey-bg;
+    padding-top: 30px;
+
+    .wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        background-color: $white;
+        border-radius: 0 0 12px 12px;
+    }
+
+    &__pic {
+        border-radius: 12px 12px 0 0;
+    }
+
+    &__content {
+        padding: 30px;
+        padding-top: 26px;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        color: $active-regular;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &__date {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $grey-bg-text;
+        margin-top: 15px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $black;
+        border-top: 4px solid $grey-bg-separator;
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .publications {
+        padding-bottom: 30px;
+
+        .wrap {
+            padding-left: 45px;
+            padding-right: 50px;
+        }
+
+        &__wrap {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 48% 48%;
+            grid-template-rows: auto auto;
+        }
+
+        &__item {
+            margin-bottom: 0;
+        }
+
+        &__item--3 {
+            grid-column: span 2;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .publications {
+        padding-top: 25px;
+
+        & .wrap {
+            padding: 0 45px;
+        }
+
+        &__wrap {
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 0;
+        }
+
+        &__item--3 {
+            grid-column: 3 / 3;
+        }
+
+        &__content {
+            padding-top: 25px;
+            line-height: 0;
+        }
+
+        &__link {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__date {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .publications {
+        .wrap {
+            padding: 0;
+        }
+
+        &__content {
+            padding: 22px 30px;
+        }
+    }
+}

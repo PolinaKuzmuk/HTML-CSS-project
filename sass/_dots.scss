@@ -1,0 +1,47 @@
+.dots {
+    display: flex;
+    width: 166px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    &--small {
+        width: 78px;
+    }
+
+    &__item,
+    &__i {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $active-regular;
+        opacity: 0.2;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &.active {
+            opacity: 1;
+        }
+    }
+    &__i:hover {
+        opacity: 0.6;
+    }
+
+    &__i.active {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .dots {
+        width: 76px;
+
+        &__item--4,
+        &__item--5,
+        &__item--6 {
+            display: none;
+        }
+    }
+}

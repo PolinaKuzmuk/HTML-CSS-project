@@ -1,0 +1,10 @@
+.phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-bg-text;
+    text-decoration: none;
+    &--dark {
+        color: $white;
+    }
+}

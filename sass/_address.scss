@@ -1,0 +1,27 @@
+.address {
+    display: none;
+    font-size: 16px;
+    line-height: 25px;
+    color: $grey-bg-text;
+
+    &--dark {
+        color: $white;
+    }
+}
+
+@media (min-width: 768px) {
+    .address {
+        display: inline-flex;
+        align-items: center;
+
+        &::before,
+        &::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $grey-bg-separator;
+            margin: 0 6px;
+        }
+    }
+}

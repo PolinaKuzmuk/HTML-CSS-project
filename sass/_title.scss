@@ -1,0 +1,30 @@
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    @include gradient-text;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-top: 9px;
+    margin-bottom: 30px;
+}
+
+.team .title {
+    margin-top: 4px;
+}
+
+.publications .title {
+    margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+    .title--lg {
+        font-size: 38px;
+        line-height: 46px;
+        margin-top: 7px;
+    }
+
+    .publications .title {
+        margin-top: 10px;
+    }
+}

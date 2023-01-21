@@ -1,0 +1,90 @@
+.card {
+    height: 120px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    &-1 {
+        background-color: $navy;
+    }
+
+    &-2 {
+        background-color: $dark-navy;
+    }
+
+    &-3 {
+        background-color: $orange;
+    }
+
+    &-4 {
+        background-color: $plum;
+    }
+
+    &-5 {
+        background-color: $light-orange;
+    }
+
+    &-6 {
+        background-color: $almost-white;
+    }
+
+    &-7 {
+        background-color: $red;
+        display: none;
+    }
+
+    &-8 {
+        background-color: $blue-white;
+        display: none;
+    }
+
+    &-9 {
+        background-color: $white-beige;
+        display: none;
+    }
+
+    &-10 {
+        background-color: $dark-plum;
+        display: none;
+    }
+
+    &-11 {
+        background-color: $deep-blue;
+        display: none;
+    }
+
+    &-12 {
+        background-color: $black;
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: calc(100% / 3);
+
+        &-7,
+        &-8,
+        &-9,
+        &-10,
+        &-11,
+        &-12 {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .card {
+        width: 25%;
+    }
+}

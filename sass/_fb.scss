@@ -1,0 +1,27 @@
+.fb {
+    display: none;
+
+    &:hover path {
+        fill: $accent;
+    }
+
+    &--dark path {
+        fill: $white;
+    }
+}
+
+@media (min-width: 768px) {
+    .fb {
+        display: inline-flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $grey-bg-separator;
+            margin: 0 6px;
+        }
+    }
+}

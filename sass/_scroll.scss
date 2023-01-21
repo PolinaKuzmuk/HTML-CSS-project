@@ -1,0 +1,31 @@
+.scroll {
+    grid-column: span 2;
+    margin: auto auto 0 auto;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        animation-name: jump;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+    }
+
+    &:hover path,
+    &:hover circle {
+        stroke: $accent;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: -20px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}

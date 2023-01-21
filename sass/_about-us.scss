@@ -1,0 +1,35 @@
+.about-us {
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        padding: 0 45px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-us {
+        display: grid;
+        grid-template: 'h2 h2'
+            'button content';
+        grid-template-columns: 42% 50%;
+        column-gap: 120px;
+        padding: 60px 45px 58px 45px;
+
+        .visually-hidden {
+            grid-area: h2;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .about-us {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding-top: 60px;
+        grid-template-columns: 35% 52%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,18 @@
+.main-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+    .main-title {
+        padding-left: 0;
+    }
+}

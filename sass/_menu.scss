@@ -1,0 +1,107 @@
+.menu {
+
+    &__list {
+        display: none;
+    }
+
+    &__gamburger {
+        display: block;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        left: 0;
+        padding: 12px;
+        list-style: none;
+        padding-inline-start: 12px;
+        background-color: $white;
+
+        & .menu__item {
+            display: block;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: $active-regular;
+            text-decoration: none;
+            padding: 7px 0;
+            background-color: $grey-bg;
+            border-radius: 12px;
+            margin-left: 0;
+            margin-bottom: 15px;
+
+            &:hover {
+                border-bottom: none;
+                background-color: $grey-bg-separator;
+            }
+
+            &.active {
+                color: $accent;
+                border-color: none;
+                cursor: auto;
+
+                &:hover {
+                    background-color: $grey-bg;
+                }
+            }
+        }
+    }
+
+    &__wrap {
+        &:last-child .menu__item {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+
+        &__list {
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        &__item {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $active-regular;
+            text-decoration: none;
+            padding-bottom: 4px;
+            margin-right: 15px;
+
+            &:hover {
+                border-bottom: 2px solid $active-regular;
+            }
+
+            &.active {
+                color: $accent;
+                border-bottom: 2px solid $accent;
+                cursor: auto;
+            }
+        }
+
+        &__item--dark {
+            color: $white;
+
+            &:hover {
+                border-bottom: 2px solid $white;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .menu {
+        &__list {
+            justify-content: flex-end;
+        }
+
+        &__item {
+            margin-right: 0;
+            margin-left: 15px;
+        }
+    }
+}

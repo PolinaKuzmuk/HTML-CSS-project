@@ -1,0 +1,116 @@
+.services {
+    margin-top: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+
+    &__grid {
+        display: grid;
+    }
+
+    &__item {
+
+        &--1,
+        &--2,
+        &--3,
+        &--4,
+        &--5,
+        &--6 {
+            background-size: 92px 92px;
+            background-repeat: no-repeat;
+        }
+
+        &--1 {
+            background-image: url(../img/service-item-1.svg);
+        }
+
+        &--2 {
+            background-image: url(../img/service-item-2.svg);
+        }
+
+        &--3 {
+            background-image: url(../img/service-item-3.svg);
+        }
+
+        &--4 {
+            background-image: url(../img/service-item-4.svg);
+        }
+
+        &--5 {
+            background-image: url(../img/service-item-5.svg);
+        }
+
+        &--6 {
+            background-image: url(../img/service-item-6.svg);
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: $active-regular;
+            margin-top: 122px;
+            margin-bottom: 15px;
+        }
+
+        &-content {
+            font-size: 16px;
+            line-height: 26px;
+            color: $white;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .services {
+        margin-top: 0;
+        padding: 0 45px 60px 45px;
+
+        &__grid {
+            margin-top: 60px;
+            grid-template-columns: 45% 45%;
+            gap: 60px;
+        }
+
+        &__item-content {
+            margin-bottom: 0;
+        }
+
+        &--dark {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .services {
+        &--dark {
+            margin-top: 0;
+        }
+
+        &__grid {
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 55px;
+        }
+
+        &__item-content {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .services {
+        &--dark {
+            padding: 0 0 60px 0;
+            .services__grid {
+                grid-template-columns: repeat(3, 1fr);
+                margin-top: 58px;
+            }
+        }
+        &__item-content {
+            font-size: 16px;
+        }
+    }
+}
